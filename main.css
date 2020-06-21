@@ -221,10 +221,8 @@ header .parent .inputwithIcon i {
 }
 
 .parent .container .product .product-image .link a:hover {
-
     margin: 10px;
     text-decoration: underline;
-
 }
 
 .parent .container .product .consult-product {
@@ -259,9 +257,7 @@ header .parent .inputwithIcon i {
 
 footer {
     background-color: rgb(225, 229, 232);
-
 }
-
 footer .container {
     margin: auto;
     display: flex;
@@ -269,26 +265,19 @@ footer .container {
     flex-flow: row;
     width: 600px;
 }
-
 footer .container P span {
     font-weight: bold;
     font-size: 18px;
-
 }
-
 footer .container P::after {
-    content: '|';
     font-size: 20px;
-
 }
-
-@media(max-width:1464px) {
+@media(max-width:1000px) {
     .parent {
         margin-left: 20px;
         margin-right: 20px;
         padding: 10px;
     }
-
     .images img {
         height: 100px;
         width: 100px;
@@ -382,7 +371,6 @@ footer .container P::after {
         justify-content: space-between;
         position: relative;
     }
-
     .parent .info {
         display: flex;
         justify-content: flex-end;
@@ -397,14 +385,12 @@ footer .container P::after {
         height: 400px;
         background-color: rgb(239, 94, 29);
     }
-
     header .parent {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
         color: white;
     }
-
     .parent .menu span {
         cursor: pointer;
         font-size: 8px;
@@ -421,7 +407,6 @@ footer .container P::after {
         width: 98%;
 
     }
-
     footer .container {
         margin: auto;
         display: flex;
@@ -430,5 +415,4 @@ footer .container P::after {
         width: 300px;
         font-size: 10px;
     }
-
 }
