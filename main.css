@@ -1,82 +1,207 @@
-*{
+* {
     box-sizing: border-box;
 }
-body{
-    background-color: rgb(246,246,246);
+
+body {
+    background-color: rgb(246, 246, 246);
     margin: 0;
     padding: 0;
     height: 1000px;
 }
+
 .parent {
     margin-left: 150px;
     margin-right: 150px;
     padding: 10px;
 }
-.images img{
+
+.images img {
     height: 200px;
     width: 200px;
 }
-.images  {
+
+.images {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     position: relative;
-    
+
 }
+
 .parent .info {
     display: flex;
     justify-content: flex-end;
     flex-flow: row wrap;
-   font-weight: bold;
-  
+    font-weight: bold;
+
 }
-.parent .info > div {
+
+.parent .info>a {
     padding-left: 17px;
-    color: rgb(79,92,148);
+    text-decoration: none;
+    color: rgb(79, 92, 148);
 }
+
+.parent .info>a:hover {
+    text-decoration: underline;
+}
+
+
 header {
-    background-color: rgb(61,73,87);
+    background-color: rgb(61, 73, 87);
 }
+
 header .parent {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
+    align-items: center;
     color: white;
 }
-header .parent input {
-    border-radius: 8px ;
+
+.parent .menu span {
+    cursor: pointer;
+
 }
-.slide{
-    height: 400px;
+
+.parent .menu span:hover {
+    color: tomato;
+}
+
+header .parent input {
+    border-radius: 8px;
+    height: 30px;
+
+}
+
+header .parent .inputwithIcon input {
+    padding-left: 40px;
+}
+
+header .parent .inputwithIcon {
+    position: relative;
+}
+
+header .parent .inputwithIcon i {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    padding-left: 9px 8px;
+    color: #aaa;
+}
+
+.parent .menu .hid {
+    display: block;
+    position: absolute;
+    background-color: white;
+    margin-top: 11px;
+    padding: 10px;
+    width: 150px;
+
+    z-index: 2;
+    visibility: hidden;
+}
+
+.parent .menu .hid>div {
+    position: relative;
+    top: -50;
+    z-index: 1;
+
+
+}
+
+.parent .menu .hid>div:hover {
+    top: 0;
+}
+
+/* .parent  .menu .hidd{
+    display: none;
+} */
+
+.slide {
+    display: flex;
+    justify-content: flex-end;
+    height: 600px;
     background-image: url("img/background1.jpg");
     background-size: cover;
 }
-.parent .container {
+
+.slide-container {
+
+    margin: 30px 100px 0 0;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(239, 94, 29);
+    border-radius: 10px;
+}
+
+.slide-container .text-slide {
+
+    height: 350px;
+    padding: 20px;
+    display: flex;
+    color: white;
+    font-size: 32px;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    font-weight: bold;
+}
+
+.slide-container .text-slide .text {
+    display: none;
+}
+
+.slide-container .parent-show {
     display: flex;
     flex-flow: row;
+    justify-content: center;
+}
+
+.slide-container .parent-show .show {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: white;
+}
+
+.parent .container {
+    display: flex;
+    flex-flow: row nowrap;
     justify-content: space-between;
 }
 
 .parent .sections {
-    width:24% ;
-    
+    width: 24%;
+
 }
 
 .parent .container h1 {
-    color: rgb(98,107,117);
+    color: rgb(98, 107, 117);
     border-bottom: 5px solid #EF5B2F;
 }
+
+.parent .container h1:hover {
+    color: rgb(129, 174, 224);
+    border-bottom: 5px solid #c2fa28;
+
+}
+
 .parent .container .adds section p {
     color: red;
 }
-.parent .container .adds section a{
+
+.parent .container .adds section a {
     text-decoration: none;
-    color: rgb(98,107,117);
+    color: rgb(98, 107, 117);
 }
-.parent .container .adds section a:hover{
+
+.parent .container .adds section a:hover {
     text-decoration: underline solid;
-    text-decoration-color: rgb(98,107,117);
+    text-decoration-color: rgb(98, 107, 117);
 }
+
 .parent .container .product .product-image {
     background-image: url('/img/background.jpg');
     background-size: cover;
@@ -84,43 +209,226 @@ header .parent input {
     display: flex;
     align-items: flex-end;
 }
-.parent  .product .product-image .link a{
+
+.parent .product .product-image .link a {
     text-decoration: none;
     background-color: rgba(127, 130, 141, 0.38);
     display: flex;
     color: white;
     text-align: center;
     margin-top: 10px;
-   
+
 }
+
 .parent .container .product .product-image .link a:hover {
-   
+
     margin: 10px;
     text-decoration: underline;
-    
+
 }
+
 .parent .container .product .consult-product {
-    background-color: rgb(241,95,0);
+    background-color: rgb(241, 95, 0);
     margin-top: 10px;
     height: 150px;
     padding: 10px;
 }
-.parent .quality .container img{
+
+.parent .quality .container img {
     width: 150px;
     height: 150px;
     margin-right: 10px;
 }
-.parent .quality .container  p {
-    color: rgb(95,108,117);
+
+.parent .quality .container p {
+    color: rgb(95, 108, 117);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
+
 .quality section .img-norme img {
-    width:80px;
+    width: 80px;
     height: 80px;
-   margin-left: 10px;
+    margin-left: 10px;
 }
-.quality section .img-norme p span{
+
+.quality section .img-norme p span {
     color: red;
     margin-right: 20px;
+}
+
+footer {
+    background-color: rgb(225, 229, 232);
+
+}
+
+footer .container {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+    width: 600px;
+}
+
+footer .container P span {
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+footer .container P::after {
+    content: '|';
+    font-size: 20px;
+
+}
+
+@media(max-width:1464px) {
+    .parent {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 10px;
+    }
+
+    .images img {
+        height: 100px;
+        width: 100px;
+    }
+    .images {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        position: relative;
+    }
+    .parent .info {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-flow: column nowrap;
+        font-weight: bold;
+    }
+    .slide-container {
+        margin: 30px 100px 0 0;
+        width: 200px;
+        height: 200px;
+        background-color: rgb(239, 94, 29);
+        border-radius: 10px;
+    }
+    .slide-container .text-slide {
+        height: 150px;
+        padding: 10px;
+        display: flex;
+        color: white;
+        font-size: 16px;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        font-weight: bold;
+    }
+    header .parent {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        color: white;
+    }
+    .parent .container {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+    .parent .container .sections {
+        width: 20%;
+    }
+    .parent .menu .hid {
+        background-color: white;
+        margin-top: 11px;
+        padding: 10px;
+        width: 100px;
+        color: black;
+    }
+    .parent .quality .container img {
+        display: none;
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+    }
+    .parent .quality .container p {
+        color: rgb(95, 108, 117);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+    }
+    .quality section .img-norme img {
+        width: 60px;
+        height: 60px;
+        display: block;
+    }
+    .quality section .img-norme p span {
+        color: red;
+        margin-right: 10px;
+    }
+}
+@media (max-width:700px) {
+    .parent {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 10px;
+    }
+    .images img {
+        height: 100px;
+        width: 100px;
+    }
+    .images {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .parent .info {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-flow: column nowrap;
+        font-weight: bold;
+    }
+    .slide-container {
+        display: none;
+        margin: 30px 100px 0 0;
+        width: 400px;
+        height: 400px;
+        background-color: rgb(239, 94, 29);
+    }
+
+    header .parent {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        color: white;
+    }
+
+    .parent .menu span {
+        cursor: pointer;
+        font-size: 8px;
+        font-weight: bold;
+    }
+
+    .parent .container {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+    }
+
+    .parent .container .sections {
+        width: 98%;
+
+    }
+
+    footer .container {
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row nowrap;
+        width: 300px;
+        font-size: 10px;
+    }
+
 }
