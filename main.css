@@ -61,6 +61,7 @@ header .parent {
 
 .parent .menu span {
     cursor: pointer;
+    padding: 15px;
 
 }
 
@@ -90,33 +91,24 @@ header .parent .inputwithIcon i {
     color: #aaa;
 }
 
+
+ 
+
 .parent .menu .hid {
     display: block;
     position: absolute;
     background-color: white;
+    color: lawngreen;
     margin-top: 11px;
     padding: 10px;
     width: 150px;
 
-    z-index: 2;
-    visibility: hidden;
 }
-
-.parent .menu .hid>div {
-    position: relative;
-    top: -50;
-    z-index: 1;
-
-
-}
-
-.parent .menu .hid>div:hover {
-    top: 0;
-}
-
-/* .parent  .menu .hidd{
+.parent .menu .hidd{
     display: none;
-} */
+   
+    
+}
 
 .slide {
     display: flex;
@@ -272,7 +264,7 @@ footer .container P span {
 footer .container P::after {
     font-size: 20px;
 }
-@media(max-width:1000px) {
+@media(max-width:1344px) {
     .parent {
         margin-left: 20px;
         margin-right: 20px;
@@ -295,6 +287,7 @@ footer .container P::after {
         flex-flow: column nowrap;
         font-weight: bold;
     }
+    
     .slide-container {
         margin: 30px 100px 0 0;
         width: 200px;
@@ -325,7 +318,12 @@ footer .container P::after {
         justify-content: space-between;
     }
     .parent .container .sections {
-        width: 20%;
+        width: 24%;
+    }
+    .parent .container h1 {
+        color: rgb(98, 107, 117);
+        border-bottom: 5px solid #EF5B2F;
+        font-size: 16px;
     }
     .parent .menu .hid {
         background-color: white;
@@ -333,6 +331,9 @@ footer .container P::after {
         padding: 10px;
         width: 100px;
         color: black;
+    }
+    .hidd{
+        display: none;
     }
     .parent .quality .container img {
         display: none;
@@ -355,7 +356,7 @@ footer .container P::after {
         margin-right: 10px;
     }
 }
-@media (max-width:700px) {
+@media (min-width:300px) and (max-width:740px) {
     .parent {
         margin-left: 20px;
         margin-right: 20px;
@@ -378,6 +379,9 @@ footer .container P::after {
         flex-flow: column nowrap;
         font-weight: bold;
     }
+    .parent input {
+        width: 150px;
+    }
     .slide-container {
         display: none;
         margin: 30px 100px 0 0;
@@ -396,7 +400,7 @@ footer .container P::after {
         font-size: 8px;
         font-weight: bold;
     }
-
+    
     .parent .container {
         display: flex;
         flex-flow: column nowrap;
@@ -406,6 +410,11 @@ footer .container P::after {
     .parent .container .sections {
         width: 98%;
 
+    }
+    .parent .container h1 {
+        color: rgb(98, 107, 117);
+        border-bottom: 5px solid #EF5B2F;
+        font-size: 16px;
     }
     footer .container {
         margin: auto;
